@@ -1,6 +1,6 @@
 #banner, #banner2{
-	filter: blur(2px);
-  	-webkit-filter: blur(2px);
+	/*filter: blur(2px);
+  	-webkit-filter: blur(2px);*/
   	height: 560px;
   	width: 100%;
   	background-position: center;
