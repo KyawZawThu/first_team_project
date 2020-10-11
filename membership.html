@@ -2,8 +2,136 @@
 <html>
 <head>
 	<title>Membership</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap-4/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+	<style type="text/css">
+	</style>
 </head>
 <body>
+	<div class="container my-3">
+		<h3>Welcome To Memberships Registration!</h3>
+		<div class="row mt-5">
+			<div class="col-sm-6 col-md-6 col-lg-6">
+				<div class="border">
+					<form class="m-4">
+						<div class="form-group">
+							<input type="text" name="fullname" class="form-control" id="fullname" placeholder="Full Name">
+						</div>
+						<div class="form-group">
+							<input type="email" name="email" class="form-control" id="email" placeholder="Your Email">
+						</div>
+						<div class="form-group">
+							<input type="number" name="phno" class="form-control" id="phno" placeholder="Phone Number">
+						</div>
+						<div class="form-group">
+							<input type="number" name="period" class="form-control" id="period" placeholder="Enter membership period (At least 7 days)">
+						</div>
+						<div class="row">							
+							<div class="col-6 col-sm-6 col-md-6 col-lg-6">
+								<div class="form-group date">
+									<label>Start date</label>
+									<input class="form-control" type="date" id="start_date" name="start_date">
+								</div>
+							</div>
+							<div class="col-6 col-sm-6 col-md-6 col-lg-6">
+								<div class="form-group date">
+									<label>End date</label>
+									<input class="form-control" type="date" id="end_date" name="end_date" >
+								</div>
+							</div>
+						</div>
+						<div class="row">							
+							<div class="col-6 col-sm-6 col-md-6 col-lg-6">
+								<div class="form-group date">
+									<label>Start time</label>
+									<input class="form-control" type="time" id="start_time" name="start_time">
+								</div>
+							</div>
+							<div class="col-6 col-sm-6 col-md-6 col-lg-6">
+								<div class="form-group date">
+									<label>End time</label>
+									<input class="form-control" type="time" id="end_time" name="end_time" >
+								</div>
+							</div>
+						</div>
+						<div class="my-5">
+							<h5><span class="mx-3">Fee</span> $5000</h5>
+						</div>					
+						<button class="btn btn-success btn-lg btn-block">Register</button>					
+					</form>
+				</div>				
+			</div>
+			<div class="col-sm-6 col-md-6 col-lg-6 pl-5">
+				<h5>Communicate honestly </h5>
+				<p>						
+				At the top of the list is communication. For teams working across different locations, having a schedule of team meetings (and sticking to it!) so that you can communicate with one another is critical. A reliable, regular cadence of meetings (in real life when possible, and if not, virtual) allows you to share wins, celebrate successes, and tackle any challenges. Creating a culture where employees have the opportunity to ask questions helps cultivate trust and interdependence.</p>
 
+				<p>For distributed teams, the lack of watercooler chat or serendipitous encounters in the corridor means we don’t always get to pick up on the nonverbal cues of our colleagues. So when proximity is not possible, technology should be leveraged as a tool to maintain cohesion and connectivity. If you’re in doubt about which channel to use when, these quick pointers may help:</p>
+				<ul>
+					<li>Email: communication to large groups and critical updates</li>
+					<li>Slack: active collaboration, digital banter (gifs, memes, the fun stuff)</li>
+					<li>Zoom: video meetings, camera switched on!</li>
+					<li>Tip: Host office hours via Zoom with no set agenda, just an open forum to ask questions or chat over a coffee. </li>
+				</ul>								
+			</div>
+		</div>		
+	</div>	
+	
+	
+	<button class="but btn-success" data-target="#MODAL" data-toggle="modal">Book</button>
+	<script type="text/javascript" src="bootstrap-4/jquery.min.js"></script>
+	<script type="text/javascript" src="bootstrap-4/js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+		})
+	</script>
 </body>
 </html>
+
+<div class="modal fade" id="MODAL">
+		<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">	
+				<div class="modal-header">
+					<h4 class="text-success">Create your own space</h4>
+					<div class="close" data-dismiss="modal">
+						<i class="fas fa-times"></i>
+					</div>
+				</div>			
+				<div class="modal-body">					
+					<form class="my-3">
+						<div class="form-group">
+							<input type="text" name="fullname" class="form-control" id="fullname" placeholder="Full Name">
+						</div>
+						<div class="form-group">
+							<input type="email" name="email" class="form-control" id="email" placeholder="Your Email">
+						</div>
+						<div class="form-group">
+							<input type="number" name="phno" class="form-control" id="phno" placeholder="Phone Number">
+						</div>
+						<div class="form-group">
+							<input class="form-control" type="date" id="date" name="date">
+						</div>
+						<div class="row">							
+							<div class="col-6 col-sm-6 col-md-6 col-lg-6">
+								<div class="form-group date">
+									<label >Start time</label>
+									<input class="form-control" type="time" id="start_date" name="start_date">
+								</div>
+							</div>
+							<div class="col-6 col-sm-6 col-md-6 col-lg-6">
+								<div class="form-group date">
+									<label >End time</label>
+									<input class="form-control" type="time" id="end_date" name="end_date" >
+								</div>
+							</div>
+						</div>
+						<div class="float-right mt-5">
+							<button class="btn btn-outline-success px-4">Book</button>
+						</div>						
+					</form>
+				</div>
+			</div>			
+		</div>
+	</div>
+
+

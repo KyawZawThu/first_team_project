@@ -1,0 +1,21 @@
+/*.team{
+	position: relative;
+	left: 80px;
+	top: 20px;
+}*/
+
+.us{
+	line-height: 30px;
+	font-size: 18px;
+}
+
+.text, .web{
+	/*position: relative;
+	left: 50px;*/
+	line-height: 30px;
+	font-size: 18px;
+}
+
+.team p{
+	font-size: 15px;
+}
