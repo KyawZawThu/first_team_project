@@ -2,8 +2,9 @@
 <html>
 <head>
 	<title>Membership</title>
-	<link rel="stylesheet" type="text/css" href="bootstrap-4/css/bootstrap.min.css">
-	<link rel="stylesheet" type="text/css" href="fontawesome/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../fontawesome/css/all.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/all.css">
 	<style type="text/css">
 	</style>
 </head>
@@ -79,8 +80,8 @@
 	
 	
 	<button class="but btn-success" data-target="#MODAL" data-toggle="modal">Book</button>
-	<script type="text/javascript" src="bootstrap-4/jquery.min.js"></script>
-	<script type="text/javascript" src="bootstrap-4/js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript" src="../bootstrap/jquery.min.js"></script>
+	<script type="text/javascript" src="../bootstrap/js/bootstrap.bundle.min.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
 		})
@@ -91,12 +92,12 @@
 <div class="modal fade" id="MODAL">
 		<div class="modal-dialog modal-dialog-centered">
 			<div class="modal-content">	
-				<div class="modal-header">
+				<!-- <div class="modal-header">
 					<h4 class="text-success">Create your own space</h4>
 					<div class="close" data-dismiss="modal">
 						<i class="fas fa-times"></i>
 					</div>
-				</div>			
+				</div>	 -->		
 				<div class="modal-body">					
 					<form class="my-3">
 						<div class="form-group">
@@ -126,7 +127,8 @@
 							</div>
 						</div>
 						<div class="float-right mt-5">
-							<button class="btn btn-outline-success px-4">Book</button>
+							<button class="btn btn-secondary px-4 mr-3" data-dismiss="modal">Cancel</button>
+							<button class="btn btn-success px-4">Book</button>
 						</div>						
 					</form>
 				</div>
