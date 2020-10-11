@@ -45,7 +45,7 @@
                    <h4 class="text-center text-secondary  mt-5  ">We Provide with Heart!!!</h4>
                    <div class="input-group mb-2 mt-auto ">
                     <div class="input-group-prepend uk-background-fixed">
-                      <a id="map" href=""><button class="btn btn-outline-primary"  id='searchmap'  type="button">Search</button></a>
+                      <a id="map" href=""><button class="btn btn-outline-primary" data-target="#yangon_map" aria-expanded="true" aria-controls="yangon_map" type="button">Search</button></a>
                     </div>
                     <select class="custom-select custom-control-inline bg-white  " id="inputGroupSelect03" >
                       <option selected hidden readonly>Yangon</option>
@@ -109,7 +109,7 @@
 
       
 
-      <div id="Yangon_map" class="container-fluid map">
+      <div id="Yangon_map" data-parent='#map' data-id ="1" class="container-fluid map">
 
         <div class="map float-right mr-5 ">
   
@@ -224,7 +224,22 @@
     <script src="../bootstrap/jquery.min.js"></script>
     <script src="../bootstrap//js/bootstrap.bundle.min.js"></script>
 
-    
+    <script>
+        
+            
+          
+
+        $(document).ready(function(){
+          $('#yangon_map').hide();
+          $('#map').click(function(){
+            $('.containerfluid').hide();
+            $('#yangon_map').show();
+          })
+
+        })
+        
+
+    </script>
     
 </body>
 </html>

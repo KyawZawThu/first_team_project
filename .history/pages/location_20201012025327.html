@@ -34,7 +34,7 @@
         </div>
     </nav>
 
-    <div class="container-fluid mb-5 hide">
+    <div class="container-fluid mb-5">
 
         <div class="col-lg-12 col-md-4 col-sm-6 col-xs-12">
             <div class="hovereffect">
@@ -45,11 +45,13 @@
                    <h4 class="text-center text-secondary  mt-5  ">We Provide with Heart!!!</h4>
                    <div class="input-group mb-2 mt-auto ">
                     <div class="input-group-prepend uk-background-fixed">
-                      <a id="map" href=""><button class="btn btn-outline-primary"  id='searchmap'  type="button">Search</button></a>
+                      <a id="map" href=""><button class="btn btn-outline-primary" data-target="#yangon_map" aria-expanded="true" aria-controls="yangon_map" type="button">Search</button></a>
                     </div>
-                    <select class="custom-select custom-control-inline bg-white  " id="inputGroupSelect03" >
-                      <option selected hidden readonly>Yangon</option>
-                      
+                    <select class="custom-select custom-control-inline bg-white  " id="inputGroupSelect03">
+                      <option selected hidden>@Location</option>
+                      <option value="1" >Yangon</option>
+                      <option value="2">Mandalay</option>
+                      <option value="3">NayPyiTaw</option>
                     </select>
                   </div>  
                      
@@ -109,7 +111,7 @@
 
       
 
-      <div id="Yangon_map" class="container-fluid map">
+      <div id="Yangon_map" data-parent='#map' data-id ="1" class="container-fluid map">
 
         <div class="map float-right mr-5 ">
   
@@ -224,7 +226,15 @@
     <script src="../bootstrap/jquery.min.js"></script>
     <script src="../bootstrap//js/bootstrap.bundle.min.js"></script>
 
-    
+    <script>
+        
+            
+          
+
+
+        
+
+    </script>
     
 </body>
 </html>
