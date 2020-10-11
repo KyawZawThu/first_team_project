@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cold & Hot Drinks</title>
+	<link rel="stylesheet" type="text/css" href="../bootstrap/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../css/all.css">
+	<style type="text/css">
+		.div_img{
+			border-radius: 50%;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h3>Cold & Hot Drinks</h3>
+		<div class="row text-center my-5" id="row_image">
+
+		</div>
+	</div>
+
+	<script type="text/javascript" src="../bootstrap/jquery.min.js"></script>
+	<script type="text/javascript" src="../bootstrap/js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var html = '';
+			var items = [{photo:"../photos/drinks/americano.png",name:"Icey-Cola"},{photo:"../photos/drinks/cappuccino.png",name:"Cola"},{photo:"../photos/drinks/espresso.png",name:"Cola"},{photo:"../photos/drinks/latte.png",name:"Cola"},{photo:"../photos/drinks/mocha-latte.png",name:"Cola"},{photo:"../photos/drinks/icey-latte.png",name:"Cola"},{photo:"../photos/drinks/cola.png",name:"Icey-Cola"},{photo:"../photos/drinks/cola-bottle.png",name:"Cola"},{photo:"../photos/drinks/engry1.png",name:"Cola"},{photo:"../photos/drinks/engry2.png",name:"Cola"},{photo:"../photos/drinks/minute1.png",name:"Cola"},{photo:"../photos/drinks/minute.png",name:"Cola"},{photo:"../photos/drinks/orange3.png",name:"Cola"},{photo:"../photos/drinks/green-apple2.png",name:"Icey-Cola"},{photo:"../photos/drinks/juice1.png",name:"Cola"},{photo:"../photos/drinks/mango.png",name:"Cola"},{photo:"../photos/drinks/orange1.png",name:"Cola"},{photo:"../photos/drinks/orange2.png",name:"Cola"},{photo:"../photos/drinks/papaya.png",name:"Cola"},{photo:"../photos/drinks/pineapple.png",name:"Cola"},{photo:"../photos/drinks/starfruit.png",name:"Cola"},{photo:"../photos/drinks/strawberry.png",name:"Cola"},{photo:"../photos/drinks/water-melon.png",name:"Cola"},{photo:"../photos/drinks/dragon-fruit.png",name:"Cola"}
+			];
+
+			$.each(items,function(index,value){
+				html+=`
+					<div class="col-sm-6 col-md-4 col-lg-2 my-3">
+					<div class="mx-1 py-3 border-radius">
+						<img src="${value.photo}" class="img-fluid">
+						<h5>${value.name}</h5>
+						</div>
+					</div>
+				`;
+			})
+
+			$("#row_image").html(html);
+		})
+
+	</script>
+</body>
+</html>
