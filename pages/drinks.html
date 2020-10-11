@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cold & Hot Drinks</title>
+	<link rel="stylesheet" type="text/css" href="bootstrap-4/css/bootstrap.min.css">
+	<style type="text/css">
+		.div_img{
+			border-radius: 50%;
+		}
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h3>Cold & Hot Drinks</h3>
+		<div class="row text-center my-5" id="row_image">
+
+		</div>
+	</div>
+
+	<script type="text/javascript" src="bootstrap-4/jquery.min.js"></script>
+	<script type="text/javascript" src="bootstrap-4/js/bootstrap.bundle.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var html = '';
+			var items = [{photo:"Photo/drinks/americano.png",name:"Icey-Cola"},{photo:"Photo/drinks/cappuccino.png",name:"Cola"},{photo:"Photo/drinks/espresso.png",name:"Cola"},{photo:"Photo/drinks/latte.png",name:"Cola"},{photo:"Photo/drinks/mocha-latte.png",name:"Cola"},{photo:"Photo/drinks/icey-latte.png",name:"Cola"},{photo:"Photo/drinks/cola.png",name:"Icey-Cola"},{photo:"Photo/drinks/cola-bottle.png",name:"Cola"},{photo:"Photo/drinks/engry1.png",name:"Cola"},{photo:"Photo/drinks/engry2.png",name:"Cola"},{photo:"Photo/drinks/minute1.png",name:"Cola"},{photo:"Photo/drinks/minute.png",name:"Cola"},{photo:"Photo/drinks/orange3.png",name:"Cola"},{photo:"Photo/drinks/green-apple2.png",name:"Icey-Cola"},{photo:"Photo/drinks/juice1.png",name:"Cola"},{photo:"Photo/drinks/mango.png",name:"Cola"},{photo:"Photo/drinks/orange1.png",name:"Cola"},{photo:"Photo/drinks/orange2.png",name:"Cola"},{photo:"Photo/drinks/papaya.png",name:"Cola"},{photo:"Photo/drinks/pineapple.png",name:"Cola"},{photo:"Photo/drinks/starfruit.png",name:"Cola"},{photo:"Photo/drinks/strawberry.png",name:"Cola"},{photo:"Photo/drinks/water-melon.png",name:"Cola"},{photo:"Photo/drinks/dragon-fruit.png",name:"Cola"}
+			];
+
+			$.each(items,function(index,value){
+				html+=`
+					<div class="col-sm-6 col-md-4 col-lg-2 my-3">
+					<div class="mx-1 py-3 border-radius">
+						<img src="${value.photo}" class="img-fluid">
+						<h5>${value.name}</h5>
+						</div>
+					</div>
+				`;
+			})
+
+			$("#row_image").html(html);
+		})
+
+	</script>
+</body>
+</html>
