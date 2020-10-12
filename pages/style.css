@@ -1,6 +1,5 @@
 
 .sidebar {
-   /* display: none;*/
 }
 @media (min-width: 768px) {
     .sidebar {
@@ -37,7 +36,6 @@
     left: 0;
     margin-top: -10px;
     position: fixed;
-   /* top: 33.3333%; */
     width: 3px;
     height: 3px;
     background: red;;
@@ -51,3 +49,6 @@ section {
     padding: 5px 10px 10px 10px;
     border-radius: 10px;
 }
+
+
+
