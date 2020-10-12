@@ -37,16 +37,16 @@
 	clear:both;
 	min-width: $master-min-width;
 	max-width: $master-max-width;
-	// margin-right: auto;
-	// margin-left: auto;
-	// padding-left:$scroll-space;
-	// padding-right:$scroll-space;
+	margin-right: auto;
+	margin-left: auto;
+	padding-left:$scroll-space;
+	padding-right:$scroll-space;
 }
 
 @include grid-cols();
 
 .panel{
-	// padding:$panel-pad;
+	padding:$panel-pad;
 }
 
 
@@ -62,8 +62,8 @@
 @include respond-to(small-medium-screens) { 
 	@include grid-cols(-sml-med);
 	.master{
-		// padding-left:$scroll-space-rs-sml;
-		// padding-right:$scroll-space-rs-sml;
+		padding-left:$scroll-space-rs-sml;
+		padding-right:$scroll-space-rs-sml;
 	}
 }
 
