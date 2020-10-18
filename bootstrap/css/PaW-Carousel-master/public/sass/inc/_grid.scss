@@ -2,7 +2,7 @@
 
 //Grid mixin for whatever size.
 @mixin grid-cols($suffix:""){
-	.row#{$suffix} { width: auto; max-width: none; min-width: 0; margin-left: -$col-padding; margin-right: -$col-padding; padding:0;}
+	.row#{$suffix} { width: auto; max-width: none; min-width: 0;  padding:0;}
 	.column#{$suffix}, .columns#{$suffix} { @include float-left; min-height: 1px; padding: 0 $col-padding; position: relative; }
 	.right#{$suffix} {@include float-right;}
 	.one#{$suffix}, .row .one#{$suffix} { width: 8.33333%;}
@@ -37,16 +37,16 @@
 	clear:both;
 	min-width: $master-min-width;
 	max-width: $master-max-width;
-	margin-right: auto;
-	margin-left: auto;
-	padding-left:$scroll-space;
-	padding-right:$scroll-space;
+	// margin-right: auto;
+	// margin-left: auto;
+	// padding-left:$scroll-space;
+	// padding-right:$scroll-space;
 }
 
 @include grid-cols();
 
 .panel{
-	padding:$panel-pad;
+	// padding:$panel-pad;
 }
 
 
@@ -62,8 +62,8 @@
 @include respond-to(small-medium-screens) { 
 	@include grid-cols(-sml-med);
 	.master{
-		padding-left:$scroll-space-rs-sml;
-		padding-right:$scroll-space-rs-sml;
+		// padding-left:$scroll-space-rs-sml;
+		// padding-right:$scroll-space-rs-sml;
 	}
 }
 
