@@ -7,7 +7,39 @@
     object-fit: cover;
 }
 
+.banner{
+    border-radius: 10px;
+    object-fit: cover;
+    height: 100px;
+    width: 100%;
+}
+
+#about_banner,#about_banner1{
+    height: 375px;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+}
+
 .bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  padding: 25px;
+  text-align: center;
+}
+
+.bg-text_location{
   background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
   color: white;
@@ -26,6 +58,10 @@
 
 #workspace{
 	margin: 180px 0px 10px 0px;
+}
+
+#location{
+  margin: 100px 0px 10px 0px;
 }
 
 div p{
@@ -55,10 +91,14 @@ footer{
 	margin: 100px 0px 0px 0px;
 }
 
-nav li:hover{
-  background: #e6e6e6;
+nav a:hover,.active{
+  background-color: #f0f5f5;
 }
 
 .bgr{
   background: #e3ded8;
+}
+
+.book_btn{
+  padding: 10px 50px;
 }
